@@ -1,0 +1,38 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: 500px;
+}
+
+#content {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#side {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+header {
+    grid-template-rows: repeat(1, 1fr);
+    background-color: plum;
+    height: 25px;
+    text-align: center;
+}
+
+footer {
+    grid-template-rows: repeat(1, 1fr);
+    background-color: lightgreen;
+    height: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    
